@@ -15,7 +15,7 @@ const productSchema = new mongoose.Schema({
   },
   rating: {
     type: Number,
-    required: [true, 'rating must be provided'],
+    required: [false, 'rating must be provided'],
   },
   createdAt: {
     type: Date,
@@ -30,4 +30,4 @@ const productSchema = new mongoose.Schema({
   },
 });
 
- export const Product = mongoose.model("product",productSchema)
+export const Product = mongoose.model('product', productSchema);
